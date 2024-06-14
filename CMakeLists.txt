@@ -9,7 +9,7 @@ set(SOURCES
     Sources/Patterns.h
     Sources/Patterns.cpp
     Sources/ChainOfResponsibility.h
-)
+	Sources/Command.h)
 
 # Get the current Git commit hash
 execute_process(

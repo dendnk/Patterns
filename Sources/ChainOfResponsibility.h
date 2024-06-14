@@ -1,9 +1,3 @@
-#pragma once
-
-#include <iostream>
-#include <memory>
-#include <string>
-
 // Chain of Responsibility (CoR) is a behavioral design pattern that lets you pass requests along a chain of handlers.
 // Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
 
@@ -14,6 +8,12 @@
 //	Administrator : Can approve access to critical resources and perform administrative tasks.
 
 //	Each level must be able to pass a request to the next level if it cannot handle it.
+
+#pragma once
+
+#include <iostream>
+#include <memory>
+#include <string>
 
 namespace ChainOfResponsibility
 {
@@ -56,7 +56,7 @@ class CUserHandler : public Handler
 public:
 	std::string Handle(const std::string& request) override
 	{
-		string result = __FUNCSIG__;
+		string result = __FUNCTION__;
 
 		if (request == StringBasicResource)
 		{
@@ -78,7 +78,7 @@ class CManagerHandler : public Handler
 public:
 	std::string Handle(const std::string& request) override
 	{
-		string result = __FUNCSIG__;
+		string result = __FUNCTION__;
 
 		if (request == StringImportantResource)
 		{
@@ -100,7 +100,7 @@ class CAdministratorHandler : public Handler
 public:
 	std::string Handle(const std::string& request) override
 	{
-		string result = __FUNCSIG__;
+		string result = __FUNCTION__;
 
 		if (request == StringCriticalResource || request == StringAdministrativeTask)
 		{
@@ -117,9 +117,9 @@ public:
 	}
 };
 
-void TestChainOfResponsibility()
+void TestChainOfResponsibilityPattern()
 {
-	cout << __FUNCSIG__ << endl;
+	cout << __FUNCTION__ << endl;
 
 	auto UserHandler = make_shared<CUserHandler>();
 	auto ManagerHandler = make_shared<CManagerHandler>();
