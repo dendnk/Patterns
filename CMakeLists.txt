@@ -19,6 +19,14 @@ execute_process(
     OUTPUT_STRIP_TRAILING_WHITESPACE
 )
 
+# Get the commit message of the current Git commit
+execute_process(
+    COMMAND git log -1 --pretty=format:%s
+    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+    OUTPUT_VARIABLE GIT_COMMIT_MESSAGE
+    OUTPUT_STRIP_TRAILING_WHITESPACE
+)
+
 # Get the author of the current Git commit
 execute_process(
     COMMAND git log -1 --pretty=format:%an
@@ -35,10 +43,13 @@ execute_process(
     OUTPUT_STRIP_TRAILING_WHITESPACE
 )
 
+
+
 # Add the commit hash and author to the preprocessor definitions
 add_definitions(-DGIT_COMMIT_HASH="${GIT_COMMIT_HASH}")
 add_definitions(-DGIT_COMMIT_AUTHOR="${GIT_COMMIT_AUTHOR}")
 add_definitions(-DGIT_COMMIT_TIME="${GIT_COMMIT_TIME}")
+add_definitions(-DGIT_COMMIT_MESSAGE="${GIT_COMMIT_MESSAGE}")
 
 configure_file(PatternsConfig.h.in Sources/PatternsConfig.h)
 
