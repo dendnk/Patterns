@@ -1,5 +1,5 @@
 ﻿#pragma once
 
-#include <iostream>
-
 #include "ChainOfResponsibility.h"
+
+#include "PatternsConfig.h"
