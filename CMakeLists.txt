@@ -10,7 +10,8 @@ set(SOURCES
     Sources/Patterns.cpp
     Sources/ChainOfResponsibility.h
 	Sources/Command.h
-    Sources/Iterator.h)
+    Sources/Iterator.h
+	Sources/Mediator.h)
 
 # Get the current Git commit hash
 execute_process(
