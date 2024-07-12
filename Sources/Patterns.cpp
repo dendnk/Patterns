@@ -6,6 +6,8 @@
 #include <iostream>
 #include "ChainOfResponsibility.h"
 #include "Command.h"
+#include "Iterator.h"
+#include "Mediator.h"
 
 int main()
 {
@@ -21,11 +23,17 @@ int main()
 	std::cout << std::left << std::setw(30) << "Author : " << GIT_COMMIT_AUTHOR << std::endl;
 	std::cout << std::left << std::setw(30) << "Time : " << GIT_COMMIT_TIME << std::endl;
 
-	std::cout << "\n=== ChainOfResponsibility Pattern ===\n";
-	ChainOfResponsibility::TestChainOfResponsibilityPattern();
+	//std::cout << "\n=== ChainOfResponsibility Pattern ===\n";
+	//ChainOfResponsibility::TestChainOfResponsibilityPattern();
 
-	std::cout << "\n=== Command Pattern ===\n";
-	Command::TestCommandPattern();
+	//std::cout << "\n=== Command Pattern ===\n";
+	//Command::TestCommandPattern();
+
+	//std::cout << "\n=== Iterator Pattern ===\n";
+	//Iterator::TestIteratorPattern();
+
+	std::cout << "\n=== Iterator Mediator ===\n";
+	Mediator::TestMediatorPattern();
 
 	return 0;
 }
