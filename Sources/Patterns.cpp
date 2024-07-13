@@ -8,6 +8,7 @@
 #include "Command.h"
 #include "Iterator.h"
 #include "Mediator.h"
+#include "Memento.h"
 
 int main()
 {
@@ -32,8 +33,11 @@ int main()
 	//std::cout << "\n=== Iterator Pattern ===\n";
 	//Iterator::TestIteratorPattern();
 
-	std::cout << "\n=== Iterator Mediator ===\n";
-	Mediator::TestMediatorPattern();
+	/*std::cout << "\n=== Mediator Pattern ===\n";
+	Mediator::TestMediatorPattern();*/
+
+	std::cout << "\n=== Memento Pattern ===\n";
+	Memento::TestMementoPattern();
 
 	return 0;
 }
