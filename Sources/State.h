@@ -11,6 +11,7 @@
 
 #pragma once
 #include <chrono>
+#include <iostream>
 #include <memory>
 #include <thread>
 #include <vector>
@@ -34,13 +35,13 @@ public:
 	TrafficLight(std::shared_ptr<TrafficLightState> InitialState) : CurrentState(InitialState) {}
 
 	std::shared_ptr<TrafficLightState> GetState() const { return CurrentState; }
-	std::shared_ptr<TrafficLightState> GetPreviousState() const { return PreviosState; }
+	std::shared_ptr<TrafficLightState> GetPreviousState() const { return PreviousState; }
 
 	void SetState(std::shared_ptr<TrafficLightState> NextState)
 	{
 		if (NextState != nullptr)
 		{
-			PreviosState = CurrentState;
+			PreviousState = CurrentState;
 			CurrentState = NextState;
 		}
 	}
@@ -52,7 +53,7 @@ public:
 
 private:
 	std::shared_ptr<TrafficLightState> CurrentState;
-	std::shared_ptr<TrafficLightState> PreviosState;
+	std::shared_ptr<TrafficLightState> PreviousState;
 };
 
 class RedState : public TrafficLightState
