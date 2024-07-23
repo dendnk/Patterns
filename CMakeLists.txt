@@ -16,7 +16,8 @@ set(SOURCES
 	Sources/Observer.h
 	Sources/State.h
 	Sources/Strategy.h
-	Sources/TemplateMethod.h)
+	Sources/TemplateMethod.h
+	Sources/Visitor.h)
 
 # Get the current Git commit hash
 execute_process(

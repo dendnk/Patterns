@@ -14,6 +14,7 @@
 #include "State.h"
 #include "Strategy.h"
 #include "TemplateMethod.h"
+#include "Visitor.h"
 
 int main()
 {
@@ -53,8 +54,11 @@ int main()
 	//std::cout << "\n=== Strategy Pattern ===\n";
 	//Strategy::TestStrategyPattern();
 
-	std::cout << "\n=== TemplateMethod Pattern ===\n";
-	TemplateMethod::TestTemplateMethodPattern();
+	//std::cout << "\n=== TemplateMethod Pattern ===\n";
+	//TemplateMethod::TestTemplateMethodPattern();
+
+	std::cout << "\n=== Visitor Pattern ===\n";
+	Visitor::TestVisitorPattern();
 
 	return 0;
 }
