@@ -11,6 +11,7 @@
 #include "Memento.h"
 #include "Observer.h"
 #include "State.h"
+#include "Strategy.h"
 
 int main()
 {
@@ -44,8 +45,11 @@ int main()
 	//std::cout << "\n=== Observer Pattern ===\n";
 	//Observer::TestObserverPattern();
 
-	std::cout << "\n=== State Pattern ===\n";
-	State::TestStatePattern();
+	/*std::cout << "\n=== State Pattern ===\n";
+	State::TestStatePattern();*/
+
+	std::cout << "\n=== Strategy Pattern ===\n";
+	Strategy::TestStrategyPattern();
 
 	return 0;
 }
