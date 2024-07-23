@@ -5,16 +5,16 @@
 #include <iomanip>
 #include <iostream>
 
-#include "ChainOfResponsibility.h"
-#include "Command.h"
-#include "Iterator.h"
-#include "Mediator.h"
-#include "Memento.h"
-#include "Observer.h"
-#include "State.h"
-#include "Strategy.h"
-#include "TemplateMethod.h"
-#include "Visitor.h"
+#include "Behavioral/ChainOfResponsibility.h"
+#include "Behavioral/Command.h"
+#include "Behavioral/Iterator.h"
+#include "Behavioral/Mediator.h"
+#include "Behavioral/Memento.h"
+#include "Behavioral/Observer.h"
+#include "Behavioral/State.h"
+#include "Behavioral/Strategy.h"
+#include "Behavioral/TemplateMethod.h"
+#include "Behavioral/Visitor.h"
 
 int main()
 {

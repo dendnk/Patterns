@@ -8,16 +8,16 @@ project (Patterns VERSION 0.1.0)
 set(SOURCES
     Sources/Patterns.h
     Sources/Patterns.cpp
-    Sources/ChainOfResponsibility.h
-	Sources/Command.h
-    Sources/Iterator.h
-	Sources/Mediator.h
-	Sources/Memento.h
-	Sources/Observer.h
-	Sources/State.h
-	Sources/Strategy.h
-	Sources/TemplateMethod.h
-	Sources/Visitor.h)
+    Sources/Behavioral/ChainOfResponsibility.h
+	Sources/Behavioral/Command.h
+    Sources/Behavioral/Iterator.h
+	Sources/Behavioral/Mediator.h
+	Sources/Behavioral/Memento.h
+	Sources/Behavioral/Observer.h
+	Sources/Behavioral/State.h
+	Sources/Behavioral/Strategy.h
+	Sources/Behavioral/TemplateMethod.h
+	Sources/Behavioral/Visitor.h)
 
 # Get the current Git commit hash
 execute_process(
@@ -63,4 +63,6 @@ configure_file(PatternsConfig.h.in Sources/PatternsConfig.h)
 
 add_executable(Patterns ${SOURCES})
 
-target_include_directories(Patterns PRIVATE ${PROJECT_BINARY_DIR}/Sources)
+target_include_directories(Patterns PRIVATE
+    ${PROJECT_BINARY_DIR}/Sources
+    ${PROJECT_BINARY_DIR}/Sources/Behavioral)
