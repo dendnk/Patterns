@@ -4,6 +4,7 @@
 
 #include <iomanip>
 #include <iostream>
+
 #include "ChainOfResponsibility.h"
 #include "Command.h"
 #include "Iterator.h"
@@ -12,6 +13,7 @@
 #include "Observer.h"
 #include "State.h"
 #include "Strategy.h"
+#include "TemplateMethod.h"
 
 int main()
 {
@@ -48,8 +50,11 @@ int main()
 	/*std::cout << "\n=== State Pattern ===\n";
 	State::TestStatePattern();*/
 
-	std::cout << "\n=== Strategy Pattern ===\n";
-	Strategy::TestStrategyPattern();
+	//std::cout << "\n=== Strategy Pattern ===\n";
+	//Strategy::TestStrategyPattern();
+
+	std::cout << "\n=== TemplateMethod Pattern ===\n";
+	TemplateMethod::TestTemplateMethodPattern();
 
 	return 0;
 }
