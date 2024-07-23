@@ -14,7 +14,8 @@ set(SOURCES
 	Sources/Mediator.h
 	Sources/Memento.h
 	Sources/Observer.h
-	Sources/State.h)
+	Sources/State.h
+	Sources/Strategy.h)
 
 # Get the current Git commit hash
 execute_process(
