@@ -10,7 +10,7 @@
 
 #pragma once
 #include <iostream>
-#include <iostream>
+#include <memory>
 
 namespace Strategy
 {
