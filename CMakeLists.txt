@@ -17,7 +17,8 @@ set(SOURCES
 	Sources/Behavioral/State.h
 	Sources/Behavioral/Strategy.h
 	Sources/Behavioral/TemplateMethod.h
-	Sources/Behavioral/Visitor.h)
+	Sources/Behavioral/Visitor.h
+	Sources/SmartPointers/SmartPointers.h)
 
 # Get the current Git commit hash
 execute_process(
@@ -65,4 +66,5 @@ add_executable(Patterns ${SOURCES})
 
 target_include_directories(Patterns PRIVATE
     ${PROJECT_BINARY_DIR}/Sources
-    ${PROJECT_BINARY_DIR}/Sources/Behavioral)
+    ${PROJECT_BINARY_DIR}/Sources/Behavioral
+    ${PROJECT_BINARY_DIR}/Sources/SmartPointers)

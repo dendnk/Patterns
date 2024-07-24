@@ -16,6 +16,8 @@
 #include "Behavioral/TemplateMethod.h"
 #include "Behavioral/Visitor.h"
 
+#include "SmartPointers/SmartPointers.h"
+
 int main()
 {
 	std::cout << "\n";
@@ -57,8 +59,11 @@ int main()
 	//std::cout << "\n=== TemplateMethod Pattern ===\n";
 	//TemplateMethod::TestTemplateMethodPattern();
 
-	std::cout << "\n=== Visitor Pattern ===\n";
-	Visitor::TestVisitorPattern();
+	//std::cout << "\n=== Visitor Pattern ===\n";
+	//Visitor::TestVisitorPattern();
+
+	std::cout << "\n=== Custom Smart Pointers ===\n";
+	SmartPointers::TestSmartPointers();
 
 	return 0;
 }
