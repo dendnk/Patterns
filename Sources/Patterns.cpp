@@ -16,6 +16,14 @@
 #include "Behavioral/TemplateMethod.h"
 #include "Behavioral/Visitor.h"
 
+#include "Structural/Adapter.h"
+#include "Structural/Bridge.h"
+#include "Structural/Composite.h"
+#include "Structural/Decorator.h"
+#include "Structural/Facade.h"
+#include "Structural/Flyweight.h"
+#include "Structural/Proxy.h"
+
 #include "SmartPointers/SmartPointers.h"
 
 int main()
@@ -62,8 +70,29 @@ int main()
 	//std::cout << "\n=== Visitor Pattern ===\n";
 	//Visitor::TestVisitorPattern();
 
-	std::cout << "\n=== Custom Smart Pointers ===\n";
-	SmartPointers::TestSmartPointers();
+	std::cout << "\n=== Adapter Pattern ===\n";
+	Adapter::TestAdapterPattern();
+
+	std::cout << "\n=== Bridge Pattern ===\n";
+	Bridge::TestBridgePattern();
+
+	std::cout << "\n=== Composite Pattern ===\n";
+	Composite::TestCompositePattern();
+
+	std::cout << "\n=== Decorator Pattern ===\n";
+	Decorator::TestDecoratorPattern();
+
+	std::cout << "\n=== Facade Pattern ===\n";
+	Facade::TestFacadePattern();
+
+	std::cout << "\n=== Flyweight Pattern ===\n";
+	Flyweight::TestFlyweightPattern();
+
+	std::cout << "\n=== Proxy Pattern ===\n";
+	Proxy::TestProxyPattern();
+
+	//std::cout << "\n=== Custom Smart Pointers ===\n";
+	//SmartPointers::TestSmartPointers();
 
 	return 0;
 }

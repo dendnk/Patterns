@@ -8,6 +8,7 @@ project (Patterns VERSION 0.1.0)
 set(SOURCES
     Sources/Patterns.h
     Sources/Patterns.cpp
+
     Sources/Behavioral/ChainOfResponsibility.h
 	Sources/Behavioral/Command.h
     Sources/Behavioral/Iterator.h
@@ -18,6 +19,15 @@ set(SOURCES
 	Sources/Behavioral/Strategy.h
 	Sources/Behavioral/TemplateMethod.h
 	Sources/Behavioral/Visitor.h
+
+	Sources/Structural/Adapter.h
+	Sources/Structural/Bridge.h
+	Sources/Structural/Composite.h
+	Sources/Structural/Decorator.h
+	Sources/Structural/Facade.h
+	Sources/Structural/Flyweight.h
+	Sources/Structural/Proxy.h
+
 	Sources/SmartPointers/SmartPointers.h)
 
 # Get the current Git commit hash
@@ -67,4 +77,5 @@ add_executable(Patterns ${SOURCES})
 target_include_directories(Patterns PRIVATE
     ${PROJECT_BINARY_DIR}/Sources
     ${PROJECT_BINARY_DIR}/Sources/Behavioral
+    ${PROJECT_BINARY_DIR}/Sources/Structural
     ${PROJECT_BINARY_DIR}/Sources/SmartPointers)
