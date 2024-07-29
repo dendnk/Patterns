@@ -5,6 +5,20 @@
 #include <iomanip>
 #include <iostream>
 
+#include "Creational/FactoryMethod.h"
+#include "Creational/AbstractFactory.h"
+#include "Creational/Builder.h"
+#include "Creational/Prototype.h"
+#include "Creational/Singleton.h"
+
+#include "Structural/Adapter.h"
+#include "Structural/Bridge.h"
+#include "Structural/Composite.h"
+#include "Structural/Decorator.h"
+#include "Structural/Facade.h"
+#include "Structural/Flyweight.h"
+#include "Structural/Proxy.h"
+
 #include "Behavioral/ChainOfResponsibility.h"
 #include "Behavioral/Command.h"
 #include "Behavioral/Iterator.h"
@@ -15,14 +29,6 @@
 #include "Behavioral/Strategy.h"
 #include "Behavioral/TemplateMethod.h"
 #include "Behavioral/Visitor.h"
-
-#include "Structural/Adapter.h"
-#include "Structural/Bridge.h"
-#include "Structural/Composite.h"
-#include "Structural/Decorator.h"
-#include "Structural/Facade.h"
-#include "Structural/Flyweight.h"
-#include "Structural/Proxy.h"
 
 #include "SmartPointers/SmartPointers.h"
 
@@ -39,6 +45,45 @@ int main()
 	std::cout << std::left << std::setw(30) << "Commit message : " << GIT_COMMIT_MESSAGE << std::endl;
 	std::cout << std::left << std::setw(30) << "Author : " << GIT_COMMIT_AUTHOR << std::endl;
 	std::cout << std::left << std::setw(30) << "Time : " << GIT_COMMIT_TIME << std::endl;
+
+
+	std::cout << "\n=== Factory Method Pattern ===\n";
+	FactoryMethod::TestFactoryMethod();
+
+	std::cout << "\n=== Abstract Factory Pattern ===\n";
+	AbstractFactory::TestAbstractFactory();
+
+	std::cout << "\n=== Builder Pattern ===\n";
+	Builder::TestBuilderPattern();
+
+	std::cout << "\n=== Prototype Pattern ===\n";
+	Prototype::TestPrototypePattern();
+
+	std::cout << "\n=== Singleton Pattern ===\n";
+	Singleton::TestSingletonPattern();
+
+
+	//std::cout << "\n=== Adapter Pattern ===\n";
+	//Adapter::TestAdapterPattern();
+
+	//std::cout << "\n=== Bridge Pattern ===\n";
+	//Bridge::TestBridgePattern();
+
+	//std::cout << "\n=== Composite Pattern ===\n";
+	//Composite::TestCompositePattern();
+
+	//std::cout << "\n=== Decorator Pattern ===\n";
+	//Decorator::TestDecoratorPattern();
+
+	//std::cout << "\n=== Facade Pattern ===\n";
+	//Facade::TestFacadePattern();
+
+	//std::cout << "\n=== Flyweight Pattern ===\n";
+	//Flyweight::TestFlyweightPattern();
+
+	//std::cout << "\n=== Proxy Pattern ===\n";
+	//Proxy::TestProxyPattern();
+
 
 	//std::cout << "\n=== ChainOfResponsibility Pattern ===\n";
 	//ChainOfResponsibility::TestChainOfResponsibilityPattern();
@@ -69,27 +114,6 @@ int main()
 
 	//std::cout << "\n=== Visitor Pattern ===\n";
 	//Visitor::TestVisitorPattern();
-
-	std::cout << "\n=== Adapter Pattern ===\n";
-	Adapter::TestAdapterPattern();
-
-	std::cout << "\n=== Bridge Pattern ===\n";
-	Bridge::TestBridgePattern();
-
-	std::cout << "\n=== Composite Pattern ===\n";
-	Composite::TestCompositePattern();
-
-	std::cout << "\n=== Decorator Pattern ===\n";
-	Decorator::TestDecoratorPattern();
-
-	std::cout << "\n=== Facade Pattern ===\n";
-	Facade::TestFacadePattern();
-
-	std::cout << "\n=== Flyweight Pattern ===\n";
-	Flyweight::TestFlyweightPattern();
-
-	std::cout << "\n=== Proxy Pattern ===\n";
-	Proxy::TestProxyPattern();
 
 	//std::cout << "\n=== Custom Smart Pointers ===\n";
 	//SmartPointers::TestSmartPointers();

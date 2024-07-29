@@ -9,6 +9,12 @@ set(SOURCES
     Sources/Patterns.h
     Sources/Patterns.cpp
 
+    Sources/Creational/FactoryMethod.h
+    Sources/Creational/AbstractFactory.h
+    Sources/Creational/Builder.h
+    Sources/Creational/Prototype.h
+    Sources/Creational/Singleton.h
+
     Sources/Behavioral/ChainOfResponsibility.h
 	Sources/Behavioral/Command.h
     Sources/Behavioral/Iterator.h
@@ -76,6 +82,7 @@ add_executable(Patterns ${SOURCES})
 
 target_include_directories(Patterns PRIVATE
     ${PROJECT_BINARY_DIR}/Sources
-    ${PROJECT_BINARY_DIR}/Sources/Behavioral
+    ${PROJECT_BINARY_DIR}/Sources/Creational
     ${PROJECT_BINARY_DIR}/Sources/Structural
+    ${PROJECT_BINARY_DIR}/Sources/Behavioral
     ${PROJECT_BINARY_DIR}/Sources/SmartPointers)
